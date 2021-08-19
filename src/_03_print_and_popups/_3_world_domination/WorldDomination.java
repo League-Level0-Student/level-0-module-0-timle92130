@@ -6,11 +6,14 @@ import javax.swing.JOptionPane;
 public class WorldDomination {
 	
 	public static void main(String[] args) {
-		
-		// 1. Ask the user if they know how to write code.
-
-		// 2. If they say "yes", tell them they will rule the world.
-
+		String name= JOptionPane.showInputDialog("What's your name?");
+		String answer= JOptionPane.showInputDialog("Do you know how to code?");
+		if (answer.equalsIgnoreCase("yes")) {
+			JOptionPane.showMessageDialog(null, "You will go on to rule the world and cancle all human beings "+name);
+	
+		}else {
+			JOptionPane.showMessageDialog(null, "you are a looser with no friends and no life. Eeryone hates you "+name+"!");
+		}
 		// 3. Otherwise, tell them to sign up for classes at The League.
 
 	}
