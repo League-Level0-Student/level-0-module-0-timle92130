@@ -16,27 +16,21 @@ public static void main(String[] args) {
 		int random= ran.nextInt(4);
 		System.out.println();
 		String awsome= JOptionPane.showInputDialog("Enter somehing awsome!");
-		if (random = 0) {
-			System.out.println("What you entere was awsome");
+		if (random == 0) {
+			JOptionPane.showMessageDialog(null,""+awsome+" is awsome");
+		}
+		else if (random==1) {
+			JOptionPane.showMessageDialog(null,""+awsome+" is ok");
+		}
+		else if (random==2) {
+			JOptionPane.showMessageDialog(null,""+awsome+" is boring");
+		}
+		else  {
+			JOptionPane.showMessageDialog(null,"you suck!");
+		}
+			
+		
 	
-		// 4. Get the user to enter something that they think is awesome
-	
-		// 5. If your variable is  0
-	
-			// -- tell the user whatever they entered is awesome!
-	
-		// 6. If your variable is  1
-	
-			// -- tell the user whatever they entered is ok.
-	
-		// 7. If your variable is  2
-	
-			// -- tell the user whatever they entered is boring.
-	
-		// 8. If your variable is  3
-	
-			// -- invent your own message to give to the user (be nice).
 
-}
 }
 }
